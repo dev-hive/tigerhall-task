@@ -1,0 +1,52 @@
+.fullPageContainer{
+  background-color: var(--bgColor);
+  min-height:100vh;
+}
+.searchHeading{
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.searchBar{
+  border: none !important;
+  margin-top: 5px;
+  background-color: var(--inputBgClr) !important;
+  border-radius: 5px !important;
+  color: white;
+}
+.loaderContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.cardsRow{
+  flex-wrap: wrap;
+  margin-top:20px;
+  display:flex;
+  justify-content:space-between;
+}
+.cardWidthContainer{
+  margin-bottom: 20px;
+  width: 24%;
+}
+@media screen and (max-width: 1300px){
+  .cardWidthContainer{
+    width: 31%;
+  }
+}
+@media screen and (max-width: 900px){
+  .cardWidthContainer{
+    width: 48%;
+  }
+}
+@media screen and (max-width: 500px){
+  .cardWidthContainer{
+    width: 100%;
+  }
+  .fullPageContainer{
+    padding-left:40px;
+    padding-right: 40px;
+  }
+}

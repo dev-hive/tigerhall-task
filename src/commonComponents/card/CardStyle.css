@@ -1,0 +1,76 @@
+.cardContainer{
+    width: 100%;
+    height: 310px;
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px -1.25455px 3.76364px rgba(0, 0, 0, 0.0941176);
+    border-radius: 5px;
+}
+.image{
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.textContainer{
+    padding: 12px;
+}
+.category{
+    color: var(--categoryAndCompanyTextClr);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 15px;
+}
+.edgeName{
+    line-height: 22px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.expertName{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color:var(--expertNameTitleClr);
+    line-height: 17px;
+}
+.title{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--expertNameTitleClr);
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.company{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--categoryAndCompanyTextClr);   
+    line-height: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+@media screen and (max-width: 500px){
+   .cardContainer{
+       height: auto;
+   }
+   .company{
+    display: block;
+   }
+   .edgeName{
+       display: block;
+   }
+  }
